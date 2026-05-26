@@ -14,7 +14,7 @@ Dieses Projekt ist ein automatisiertes Python-Tool zur datengetriebenen Analyse 
 
 ## 🛠️ Tech-Stack
 * **Sprache:** Python 3.12
-* **Bibliotheken:** `google-api-python-client`, `requests`, `openai`, `pydantic`, `regex`
+* **Haupt-Bibliotheken:** `google-api-python-client`, `requests`, `openai`, `pydantic`, `regex`
 * **APIs:** YouTube Data API v3, OpenAI API
 
 *Bei Fragen zum vollständigen Code, der NLP-Pipeline oder der Systemarchitektur stehe ich in einem persönlichen Interview gerne zur Verfügung!*
