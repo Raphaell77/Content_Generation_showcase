@@ -17,39 +17,6 @@ youtube = googleapiclient.discovery.build(
     api_service_name, api_version, developerKey=API_KEY, cache_discovery=False)   # cache discovery=False ist oft stabiler
 
 
-# searches yt videos to extract titels for keyword extensions: gerade verwende ich stattdessen send_http_request()
-# def youtube_client() -> dict:
-#     yt_video_titles = {}
-#     kw = niche.get_seed_keywords()
-
-#     for seed in kw:
-#         yt_video_titles[seed] = list()
-
-
-#     MAX_RESULTS = 3 # fuer nlp unbedingt deutlich hoeher stellen
-#     for keyword in yt_video_titles.keys():
-#         request = youtube.search().list(
-#             part="snippet",
-#             type="video",
-#             maxResults=MAX_RESULTS,
-#             q=niche.name + " " + keyword,
-#             relevanceLanguage='en'
-#         )
-#         response = request.execute()
-
-#         # da maxResults bugged? ich
-#         if len(response["items"]) < MAX_RESULTS:
-#             MAX_RESULTS = len(response["items"])
-
-#         for i in range(MAX_RESULTS):    
-#             video_title = response["items"][i]["snippet"]["title"]
-#             yt_video_titles[keyword].append(video_title)
-
-#     cleaned_titles = niche.clean_input(yt_video_titles)
-            
-#     return cleaned_titles
-
-
 
 def get_video_id(merged_expandings, niche_name, max_results=MAX_RESULTS):
     # Optionen für yt-dlp konfigurieren

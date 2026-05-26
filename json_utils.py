@@ -3,7 +3,6 @@ import json
 import regex as re
 
 
-# ascii irgendwie weird & youtube_client() gibt irgendwie mehr als max_results=5 aus?
 def write_in_json(data: dict[str, list[str]], path: str):
     try:
         if not isinstance(data, dict):
@@ -51,17 +50,3 @@ def delete_json_data(path):
     return
 
 
-
-# def get_yt_titles(keyword:str) -> list[str]:
-#     titles = []
-#     try:
-#         with open(PATH_YOUTUBE_DATA, 'r') as file:
-#             data = json.load(file)
-
-#             for title in data[keyword]:
-#                 titles.append(title)
-
-#     except FileNotFoundError:
-#         print(f'Error: file {PATH_YOUTUBE_DATA} was not found.')
-        
-#     return titles

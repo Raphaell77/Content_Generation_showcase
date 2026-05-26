@@ -13,7 +13,7 @@ Dieses Projekt ist ein automatisiertes Python-Tool zur datengetriebenen Analyse 
 * `data.json`: Ein Beispiel für die verarbeiteten API-Responses (Metadaten, Statistiken).
 
 ## 🛠️ Tech-Stack
-* **Sprache:** Python 3.12
+* **Sprache:** Python 3.11
 * **Haupt-Bibliotheken:** `google-api-python-client`, `requests`, `openai`, `pydantic`, `regex`
 * **APIs:** YouTube Data API v3, OpenAI API
 
